@@ -1,0 +1,15 @@
+<div ng-if="infoCtrl.check">
+<h1>Your information</h1>
+<p>Firstname: {{infoCtrl.firstname}}</p>
+<p>Lastname: {{infoCtrl.lastname}}</p>
+<p>Email: {{infoCtrl.email}}</p>
+<p>Phone: {{infoCtrl.phone}}</p>
+<p>Favorite dish: {{infoCtrl.menu}}</p>
+<p>title of the dish: {{infoCtrl.title}}</p>
+<p>description of the dish: {{infoCtrl.description}}</p>
+<img class="img-responsive" width="250" height="150" ng-src="{{infoCtrl.basePath}}/images/{{infoCtrl.menu}}.jpg">
+</div>
+
+<div ng-if="infoCtrl.sign"><p>Not Signed Up Yet. <a ui-sref="public.register">Sign up Now!</a></p></div>
+
+
